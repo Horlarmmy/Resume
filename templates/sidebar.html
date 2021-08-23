@@ -1,0 +1,45 @@
+  {% block sidebar %}
+
+<style>
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB
+            width: 200px;
+            }
+        .card-body{
+        margin-left: 5px; padding-left: 5px;}
+        .card-form{margin-left: 5px; }
+       
+</style>
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-5 float-right ">
+    <div class="card my-4">
+        <h5 class="card-header"> About Me</h5>
+        <div class="card-body"> Hello! I am Alade Toheeb O. .I'm a Backend developer, Computer Engineer, Digital Marketer and Mobile App developer.
+<br/>
+I have developed a few projects in Django, Rest API, Git and other backend development tools.</div>
+
+    </div>
+ <div class="card my-4">
+        <h5 class="card-header" id="card-body" >Contact Us</h5>
+        <div class="card-form">
+        <form action="" method="post">
+        {% csrf_token %}
+            <p> <label for="name">Name:</label><br/>
+             <input name="name" type="text" required /></p>
+             <p><label for="e-mail">E-mail:</label><br/>
+             <input name="e-mail" type="text" placeholder="Your mail" required /></p>
+            <p><label>What can we do for you:</label><br/>
+             <textarea name="enquires" type="text"></textarea></p>
+             <input type="submit" value="Submit"/>
+        </form>
+        </div>
+    <div class="card-body">
+        <p><strong> Address </strong><br/>Tanke, Ilorin Nigeria. </p>
+        <p ><strong> Email</strong> <br/>aladetoheeb5@gmail.com</p>
+        <p ><strong>Phone </strong> <br/>+2347045408817</p>
+    </div>
+</div>
+</div>
+
+{% endblock sidebar %}

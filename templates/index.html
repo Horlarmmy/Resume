@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<style>
+body{margin-left: 5px;  background-color:#cbceea;}
+.centered img{ width:100px; border-radius: 50%; height:100px; float:inline-start; box-shadow: 0 0 2px 3px #7add0a;}
+.centered{background-image: url(back.jpg); background-size: contain; height: 300px;}
+.centered p{ text-align:center; font-size:20px; clear:both;}
+h5.basic{font-size: 30px;}
+.skill-head{ font-size: 30px; text-align: center; font-weight:bold; background-color: yellowgreen;}
+.info{box-shadow: 0 0 5px 5px #b9b6b6; margin-left: 15px; padding-left: 5px;} 
+.info{animation-name: wheel; animation-duration: 3s; animation-timing-function: ease-in-out; animation-delay: 1ms; animation-direction: normal;}
+.project{box-shadow: 0 0 2px 3px #c5c3c3; font-size: 20px; text-align: center; }
+@keyframes wheel { from { width: 300px; height: 150px;} to { width: max-content; height: max-content;}}
+.project-head{font-size: 30px;}
+.work{box-shadow: 0 0 5px 5px #e7e4e4; text-align: center; font-size: 35px; background-color: aquamarine;}
+.work-head{font-size: 25px; background-color: cadetblue;}
+.edu{box-shadow: 0 0 2px 3px #f5f4f4; margin-left: 10px; padding-left: 5px; padding-right: 5px; font-size: 20px; background-color: #77eb03; }
+.edu-head{ font-size: 30px; text-align: center; font-weight:bold; background-color: rgb(16, 202, 9);}
+.edu1{ text-align: center; font-size: 20px;}
+.edu2{ text-align: center; font-size: 20px;}
+.skill{box-shadow: 0 0 5px 5px #b9b6b6; margin-left: 15px; padding-left: 5px; font-size: 25px; padding-right: 5px; background-color: burlywood;}
+</style>
+<div class="container">
+        <div class="row">
+            <div class=" col-md-7 mt-3 left">
+<div class="centered"><p><img src="back.jpg" alt="avatar" width="100px" height="100px"/>
+        <p> TOHEEB ALADE O. <br/>Computer Engineer, Python Developer</p>
+</div>
+<div class="info">
+<h5 class="basic">Basic Information</h5>
+<p ><strong>AGE:</strong><br/>19</p>
+<p ><strong>EMAIL:</strong><br/>aladetoheeb5@gmail.com</p>
+<p ><strong>PHONE:</strong><br/>+2347045408817</p>
+<p ><strong>ADDRESS:</strong><br/>Tanke, Ilorin Nigeria.</p>
+<p ><strong>LANGUAGES:</strong><br/>English, Yoruba, Hausa</p>
+</div>
+<div class="skill">
+    <h5 class="skill-head" > SKILLS </h5>
+        <p class="skill-box">
+        <li> Graphic Designing </li>
+        <li> Django-Python Developer</li>
+        <li> Software Engineering</li>
+        <li>Digital Marketing</li>
+        </p>
+   <p><strong>SOFTWARE USED:</strong>     Corel draw, Vs code, Python3, Django, Eclipse, Codeblock, Power Bi.</p>
+</div>
+<div class="work">
+<h5 class="work-head">Work Experience</h5>
+<p> <img src="zuri.jpg" alt="zuri-logo"/><br/>INTERNSHIP with Zuri Team <br/> August 2021 - present</p>
+<p><img src="work.jpg"/><br/>Worked with my team to design a Bank Application using Python</p>
+</div>
+<div class="project">
+<h5 class="project-head">PROJECTS</h5>
+<p><img src="pro1.jpg" alt="my blog"/><br/> ZURI CRUD-WITH-DJANGO PROJECT </p>
+<p><img src="pro2.jpg" alt="python task" /><br/> MY PYTHON PROJECTS </p>
+<p><img src="pro3.jpg" alt="web-dev" /><br/> WEB DEVELOPMENTS </p>
+<p><img src="pro4.jpg" alt="programming" /><br/> C PROGRAMMING TASKS</p>
+
+</div>
+<div class="edu">
+<h5 class="edu-head">EDUCATION</h5>
+<p class="edu1"><img src="high.jpg" alt="high-school" width="75px" height="75px"/> <br/><strong> HIGH SCHOOL</strong><br/>Hans Private School, Ikotun Lagos. <br/>2016 - 2018</p>
+<p class="edu2"><img src="college.jpg" alt="college" width="75px" height="75px"/> <br/><strong> COLLEGE</strong> <br/>B.Eng Computer Engineering. <br/>University of Ilorin, Kwara State. <br/>2018 - present</p>
+</div>
+</div>
+ {% block sidebar %} {% include 'sidebar.html' %}
+         {% endblock sidebar %}
+</div>
+</div>
+
+
+{%endblock%}
